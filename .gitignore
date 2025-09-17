@@ -1,0 +1,15 @@
+# Entorno virtual
+.venv/
+
+# Archivos temporales de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pkl
+
+# Datos grandes o sensibles
+datos/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
