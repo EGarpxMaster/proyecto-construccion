@@ -125,9 +125,9 @@ $$
 
 ### Restricciones:
 $$
-0 \leq F_{\t{mat}} \leq \t{Máx Materiales}, \quad
-0 \leq F_{\t{mo}} \leq \t{Máx Mano de Obra}, \quad
-0 \leq F_{\t{pres}} \leq \t{Máx Presupuesto}
+0 \leq F_{\t{mat}} \leq \t{Max Materiales}, \quad
+0 \leq F_{\t{mo}} \leq \t{Max Mano de Obra}, \quad
+0 \leq F_{\t{pres}} \leq \t{Max Presupuesto}
 $$
 
 - $F_{\t{mat}}, F_{\t{mo}}, F_{\t{pres}}$ = factores óptimos de cada recurso que minimizan el retraso.
