@@ -57,8 +57,8 @@ R_{\text{simulado}} = R_{\text{original}} + \sum_{i=1}^{3} w_i \cdot \max(0, 1 -
 
 st.markdown("""
 Donde:
-- $R_{\text{simulado}}$ = Retraso simulado (días)
-- $R_{\text{original}}$ = Retraso original (días)
+- $R_{\t{simulado}}$ = Retraso simulado (días)
+- $R_{\t{original}}$ = Retraso original (días)
 - $w_i$ = Peso del recurso $i$ (Materiales, Mano de Obra, Presupuesto)
 - $f_i$ = Factor del recurso $i$ (0.5 a 1.5, donde 1.0 = 100%)
 - $\max(0, 1 - f_i)$ = Penaliza solo déficit de recursos ($f_i < 1$)
