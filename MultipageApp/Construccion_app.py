@@ -85,7 +85,7 @@ st.markdown("**Retraso Total Simulado:**")
 st.latex(r"""
 RT = \sum_{j=1}^{n} R_{\text{simulado}, j}
 """)
-st.markdown("donde $n$ es el número de proyectos y $R_{\text{simulado}, j}$ es el retraso simulado del proyecto $j$.")
+st.markdown("donde $n$ es el número de proyectos y $R_{\t{simulado}, j}$ es el retraso simulado del proyecto $j$.")
 
 # Retraso Promedio Simulado
 st.markdown("**Retraso Promedio Simulado:**")
@@ -120,17 +120,17 @@ El objetivo de la **optimización lineal** es encontrar la **mejor combinación 
 
 ### Función Objetivo:
 $$
-\text{Minimizar } Z = 0.1 \cdot (100 - F_{\text{mat}}) + 0.1 \cdot (100 - F_{\text{mo}}) + 0.05 \cdot (100 - F_{\text{pres}})
+\t{Minimizar } Z = 0.1 \cdot (100 - F_{\text{mat}}) + 0.1 \cdot (100 - F_{\text{mo}}) + 0.05 \cdot (100 - F_{\text{pres}})
 $$
 
 ### Restricciones:
 $$
-0 \leq F_{\text{mat}} \leq \text{Máx Materiales}, \quad
-0 \leq F_{\text{mo}} \leq \text{Máx Mano de Obra}, \quad
-0 \leq F_{\text{pres}} \leq \text{Máx Presupuesto}
+0 \leq F_{\t{mat}} \leq \t{Máx Materiales}, \quad
+0 \leq F_{\t{mo}} \leq \t{Máx Mano de Obra}, \quad
+0 \leq F_{\t{pres}} \leq \t{Máx Presupuesto}
 $$
 
-- $F_{\text{mat}}, F_{\text{mo}}, F_{\text{pres}}$ = factores óptimos de cada recurso que minimizan el retraso.
+- $F_{\t{mat}}, F_{\t{mo}}, F_{\t{pres}}$ = factores óptimos de cada recurso que minimizan el retraso.
 - La optimización considera la relación lineal entre déficit de recursos y aumento de retrasos, usando los mismos pesos que el simulador.
 
 ### Justificación:
@@ -148,10 +148,10 @@ El **simulador de escenarios** y el **modelo de optimización lineal** se comple
 
 1. **Simulador:**  
    - Explora escenarios hipotéticos ajustando los factores de recursos.
-   - Calcula el retraso simulado por proyecto con la fórmula $R_{\text{simulado}}$.
+   - Calcula el retraso simulado por proyecto con la fórmula $R_{\t{simulado}}$.
 
 2. **Optimización Lineal:**  
-   - Analiza los escenarios simulados y determina la asignación óptima $F_{\text{mat}}, F_{\text{mo}}, F_{\text{pres}}$.
+   - Analiza los escenarios simulados y determina la asignación óptima $F_{\t{mat}}, F_{\t{mo}}, F_{\t{pres}}$.
    - Minimiza la función objetivo $Z$, respetando las restricciones de cada recurso.
 
 **Flujo de trabajo:**
